@@ -1,0 +1,20 @@
+Instructions, References and Reminders for this challenge:
+----------------------------------------------------------
+
+- Cite works of others; you can use them; provide a link
+- Concentrate on implementation designs, and reasoning behind them rather than on accuracy scores
+
+Challenge:
+Design a deep-net that obtains high accuracy predictions for the Fashion MNIST dataset [1]. (There are lots of pre-written architectures that you can use as well).
+Obtain the information plane visualization (See Fig 5 in [2]) of the layers' information paths during SGD optimization for the deep-net designed above.
+
+References:
+[1] https://github.com/zalandoresearch/fashion-mnist
+[2] https://arxiv.org/abs/1703.00810
+
+Personal reminders:
+- Upload git bundle and Jupyter notebook
+- Make sure there are comments explaining every loc
+- Upload by Monday 7pm
+- Understand why I am doing this; how it relates to the job
+- Send an update to C????? and V???? after you finish the codes

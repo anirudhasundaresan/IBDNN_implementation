@@ -13,7 +13,7 @@ References:
 [2] https://arxiv.org/abs/1703.00810 - original paper introducing what we want (figure 2)
 [3] http://mitliagkas.github.io/ift6085/student_slides/IFT6085_Presentation_IB.pdf -- very good presentation detailing the above work
 [4] https://arxiv.org/pdf/1708.07747.pdf -- paper introducing the fashion-MNIST dataset (and how it was prepared, to be in the flavor of MNIST)
-[5] https://github.com/ravidziv/IDNNs -- implementation of the IB paper, straight from the authors! -- seems to have a bad rap as people are not able to reproduce this effectively,
+[5] https://github.com/ravidziv/IDNNs -- implementation of the IDNN paper, straight from the authors! -- seems to have a bad rap as people are not able to reproduce this effectively,
 need to check it out.
 [6] https://openreview.net/forum?id=ry_WPG-A- -- wow, more discussions on the correctness of this paper, now I am skeptical. Probably, my results might also disprove the paper? since I
 don't think this has been done with the fashion_mnist set
@@ -41,3 +41,12 @@ Notes:
 Plan of action:
 - Read through [1], read through [2], and then try implementations
 - You will need an architecture that can help you visualize what's being asked from [2] - best to use the architecture used by the authors themselves!
+
+Coding specifics:
+- Using docker image: tensorflow/tensorflow:latest-gpu-py3
+- Latest commit for this code is on Nov-2017. Make changes to the code for issues after that date.
+    - Changed 'parmas' to 'params' - change in code required
+- Removed existing docker : tensorflow/tensorflow:latest-gpu, since this code is in py3 and system required more space.
+- Inside the docker:
+    - Installed joblib (pip install joblib)
+    - Installed tkinter, but required a update first (apt-get update && apt-get install python3-tk)

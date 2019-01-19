@@ -16,9 +16,13 @@ import math
 import os.path
 import idnns.plots.utils as utils
 import tkinter as tk
+# import _tkinter as tk
 from numpy import linalg as LA
 
+# from _tkinter import tkFileDialog
 from tkinter import filedialog
+# from _tkinter import filedialog
+
 LAYERS_COLORS  = ['red', 'blue', 'green', 'yellow', 'pink', 'orange']
 
 def plot_all_epochs(gen_data, I_XT_array, I_TY_array, axes, epochsInds, f, index_i, index_j, size_ind,

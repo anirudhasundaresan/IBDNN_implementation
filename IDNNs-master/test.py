@@ -6,6 +6,9 @@ if __name__ == '__main__':
     str_name =[['jobs/trails1_DataName=g2_sampleLen=1_layerSizes=10,7,5,4,3_lr=1e-05_nEpochInds=75_nRepeats=1_LastEpochsInds=999_nDistSmpls=1_nEpoch=1000_batch=4016/']]
     #str_name = [['jobs/trails2_DataName=var_u_sampleLen=1_layerSizes=10,7,5,4,3_lr=0.0004_nEpochInds=84_nRepeats=1_LastEpochsInds=9998_nDistSmpls=1_nEpoch=10000_batch=4016/']]
     #plt_fig.plot_figures(str_name, 2, 'd')
+
+    # I added this below:
+    str_name = [['jobs/net_batch=512_nEpochInds=274_LastEpochsInds=7999_sampleLen=1_DataName=var_u_nRepeats=1_lr=0.0004_nEpoch=8000_layerSizes=10,7,5,4,3_nDistSmpls=1/']]
     plt_fig.plot_alphas(str_name[0][0])
     mode = 2
     save_name = 'figure'

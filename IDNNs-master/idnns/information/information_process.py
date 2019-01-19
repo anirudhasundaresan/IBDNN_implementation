@@ -138,7 +138,7 @@ def calc_information_for_epoch(iter_index, interval_information_display, ws_iter
 			range(len(ws_iter_index))]
 	# Calc infomration of only subset of the neurons
 	elif calc_information_by_sampling:
-		parmas = calc_by_sampling_neurons(ws_iter_index=ws_iter_index, num_of_samples=num_of_samples, label=label,
+		params = calc_by_sampling_neurons(ws_iter_index=ws_iter_index, num_of_samples=num_of_samples, label=label,
 		                                  sigma=sigma, bins=bins, pxs=pxs)
 
 	elif calc_regular_information:

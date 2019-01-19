@@ -47,6 +47,7 @@ Coding specifics:
 - Latest commit for this code is on Nov-2017. Make changes to the code for issues after that date.
     - Changed 'parmas' to 'params' - change in code required
 - Removed existing docker : tensorflow/tensorflow:latest-gpu, since this code is in py3 and system required more space.
-- Inside the docker:
+- Within the docker:
     - Installed joblib (pip install joblib)
     - Installed tkinter, but required a update first (apt-get update && apt-get install python3-tk)
+- Made changes in idnns/networks/utils.py to get this working with fashion_mnist dataset.

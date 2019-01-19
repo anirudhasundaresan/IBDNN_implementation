@@ -11,6 +11,7 @@ Obtain the information plane visualization (See Fig 5 in [2]) of the layers' inf
 References:
 [1] https://github.com/zalandoresearch/fashion-mnist
 [2] https://arxiv.org/abs/1703.00810
+[3] https://arxiv.org/pdf/1708.07747.pdf -- paper introducing the fashion-MNIST dataset (and how it was prepared, to be in the flavor of MNIST)
 
 Personal reminders:
 - Upload git bundle and Jupyter notebook
@@ -18,3 +19,12 @@ Personal reminders:
 - Upload by Monday 7pm
 - Understand why I am doing this; how it relates to the job
 - Send an update to C????? and V???? after you finish the codes
+
+Notes:
+- The two references seem to be unrelated; the [2] is an application for [1] - surface level realization
+- Make sure you are running this on fashion dataset and not on MNIST
+- Go through issues in the main repo before choosing an architecture
+
+Plan of action:
+- Read through [1], read through [2], and then try implementations
+- You will need an architecture that can help you visualize what's being asked from [2]

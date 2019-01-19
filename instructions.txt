@@ -33,9 +33,9 @@ Notes:
 - The two references seem to be unrelated; the [2] is an application for [1] - surface level realization [Done]
 - Make sure you are running this on fashion dataset and not on MNIST
 - Go through issues in the main repo before choosing an architecture
-  - Try the IDNN architecture with the MNIST data first; see if you are able to reproduce results
+  - Try the IDNN architecture with the MNIST data first; see if you are able to reproduce results (https://github.com/ravidziv/IDNNs)
   - Try the IDNN with fashion_MNIST data and see if you can get it working
-  - Try ibsgd with MNIST and see if you can replicate work
+  - Try ibsgd with MNIST and see if you can replicate work (https://github.com/artemyk/ibsgd/tree/iclr2018)
   - Try ibsgd with fashion_MNIST and see if you can replicate work
 
 Plan of action:

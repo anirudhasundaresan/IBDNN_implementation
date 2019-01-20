@@ -12,9 +12,9 @@ import utils
 import loggingreporter
 
 cfg = {}
-cfg['SGD_BATCHSIZE']    = 128 
+cfg['SGD_BATCHSIZE']    = 256
 cfg['SGD_LEARNINGRATE'] = 0.001
-cfg['NUM_EPOCHS']       = 100
+cfg['NUM_EPOCHS']       = 10000
 # changed from 10000
 
 #cfg['ACTIVATION'] = 'relu'

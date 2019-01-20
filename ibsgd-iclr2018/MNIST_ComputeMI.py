@@ -28,11 +28,8 @@ DO_SAVE        = True   # Whether to save plots or just show them
 DO_LOWER       = True    # (infoplane_measure == 'lower')   # Whether to compute lower bounds also
 DO_BINNED      = True    #(infoplane_measure == 'bin')     # Whether to compute MI estimates based on binning
 
-#MAX_EPOCHS = 10000      # Max number of epoch for which to compute mutual information measure
-# MAX_EPOCHS = 1000
-#COLORBAR_MAX_EPOCHS = 10000
-MAX_EPOCHS = 100
-COLORBAR_MAX_EPOCHS = 100
+MAX_EPOCHS = 10000      # Max number of epoch for which to compute mutual information measure
+COLORBAR_MAX_EPOCHS = 10000
 
 # Directories from which to load saved layer activity
 #ARCH = '1024-20-20-20'

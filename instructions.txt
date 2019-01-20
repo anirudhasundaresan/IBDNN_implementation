@@ -43,6 +43,7 @@ Plan of action:
 - You will need an architecture that can help you visualize what's being asked from [2] - best to use the architecture used by the authors themselves!
 
 Coding specifics:
+(for working with IDNN code)
 - Using docker image: tensorflow/tensorflow:latest-gpu-py3
 - Latest commit for this code is on Nov-2017. Make changes to the code for issues after that date.
     - Changed 'parmas' to 'params' - change in code required
@@ -53,3 +54,15 @@ Coding specifics:
 - Made changes in idnns/networks/utils.py to get this working with fashion_mnist dataset.
 - Note: previously, the code ran faster on var_u.mat, not sure what it is, need to explore more. I think it is binary representation of MNIST data; in which case we need
 the same for fashion_mnist.
+
+(for working with IBSGD code)
+- Use docker image: ermaker/keras with tag='gpu' --> has py3
+- pip install seaborn 
+- pip install matplotlib 
+- convert all cPickle to pickle 
+- convert ipynb to .py files - jupyter nbconvert --to script '<name_of_file>.ipynb'
+- play around with different network archs and relu/tanh
+
+Improvements: 
+- After a long effort (and experimenting this on my Mac and Ubuntu system), I discontinued using the main IDNN codes, since they were confusing and there are many changes to be made to make it work with MNIST data. (Removing the IDNN codes from this repo and bringing in code which works)
+- I started using the codes written here: https://github.com/artemyk/ibsgd/tree/iclr2018 -- gives perfect results to what is being asked. 

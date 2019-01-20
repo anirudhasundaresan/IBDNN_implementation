@@ -35,10 +35,12 @@ MAX_EPOCHS = 100
 COLORBAR_MAX_EPOCHS = 100
 
 # Directories from which to load saved layer activity
-ARCH = '1024-20-20-20'
+#ARCH = '1024-20-20-20'
 #ARCH = '20-20-20-20-20-20'
 #ARCH = '32-28-24-20-16-12'
 #ARCH = '32-28-24-20-16-12-8-8'
+ARCH = '128-64-32-16-16'
+
 DIR_TEMPLATE = '%%s_%s'%ARCH
 
 # Functions to return upper and lower bounds on entropy of layer activity

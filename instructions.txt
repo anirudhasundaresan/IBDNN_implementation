@@ -22,16 +22,16 @@ don't think this has been done with the fashion_mnist set
 and has also included a version he feels is better @https://github.com/artemyk/ibsgd/tree/iclr2018
 
 Personal reminders:
-- Upload git bundle and Jupyter notebook
-- Make sure there are comments explaining every loc
+- Upload git bundle or Jupyter notebook
+- Make sure there are comments explaining every loc (not needed)
 - Upload by Monday 7pm
 - Understand why I am doing this; how it relates to the job
-- Send git link, so they can track progress [Done]
+- Send git link, so they can track progress (Done)
 - Send an update to C????? and V???? after you finish the codes
 
 Notes:
 - The two references seem to be unrelated; the [2] is an application for [1] - surface level realization [Done]
-- Make sure you are running this on fashion dataset and not on MNIST
+- Make sure you are running this on fashion dataset and not on MNIST (Done)
 - Go through issues in the main repo before choosing an architecture
   - Try the IDNN architecture with the MNIST data first; see if you are able to reproduce results (https://github.com/ravidziv/IDNNs)
   - Try the IDNN with fashion_MNIST data and see if you can get it working
@@ -39,8 +39,8 @@ Notes:
   - Try ibsgd with fashion_MNIST and see if you can replicate work
 
 Plan of action:
-- Read through [1], read through [2], and then try implementations
-- You will need an architecture that can help you visualize what's being asked from [2] - best to use the architecture used by the authors themselves!
+- Read through [1], read through [2], and then try implementations (Done)
+- You will need an architecture that can help you visualize what's being asked from [2] - best to use the architecture used by the authors themselves! - (Done)
 
 Coding specifics:
 (for working with IDNN code)
@@ -57,12 +57,13 @@ the same for fashion_mnist.
 
 (for working with IBSGD code)
 - Use docker image: ermaker/keras with tag='gpu' --> has py3
-- pip install seaborn 
-- pip install matplotlib 
-- convert all cPickle to pickle 
+- pip install seaborn
+- pip install matplotlib
+- convert all cPickle to pickle
+- pip install pathlib2
 - convert ipynb to .py files - jupyter nbconvert --to script '<name_of_file>.ipynb'
 - play around with different network archs and relu/tanh
 
-Improvements: 
+Improvements:
 - After a long effort (and experimenting this on my Mac and Ubuntu system), I discontinued using the main IDNN codes, since they were confusing and there are many changes to be made to make it work with MNIST data. (Removing the IDNN codes from this repo and bringing in code which works)
-- I started using the codes written here: https://github.com/artemyk/ibsgd/tree/iclr2018 -- gives perfect results to what is being asked. 
+- I started using the codes written here: https://github.com/artemyk/ibsgd/tree/iclr2018 -- gives perfect results to what is being asked.

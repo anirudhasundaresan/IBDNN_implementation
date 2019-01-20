@@ -12,7 +12,7 @@ import utils
 import loggingreporter
 
 cfg = {}
-cfg['SGD_BATCHSIZE']    = 512 # 256 was before
+cfg['SGD_BATCHSIZE']    = 128 
 cfg['SGD_LEARNINGRATE'] = 0.001
 cfg['NUM_EPOCHS']       = 100
 # changed from 10000
@@ -20,9 +20,9 @@ cfg['NUM_EPOCHS']       = 100
 #cfg['ACTIVATION'] = 'relu'
 cfg['ACTIVATION'] = 'tanh'
 # How many hidden neurons to put into each of the layers
-cfg['LAYER_DIMS'] = [1024, 20, 20, 20]
+#cfg['LAYER_DIMS'] = [1024, 20, 20, 20]
 #cfg['LAYER_DIMS'] = [32, 28, 24, 20, 16, 12, 8, 8]
-#cfg['LAYER_DIMS'] = [128, 64, 32, 16, 16] # 0.967 w. 128
+cfg['LAYER_DIMS'] = [128, 64, 32, 16, 16] # 0.967 w. 128
 #cfg['LAYER_DIMS'] = [20, 20, 20, 20, 20, 20] # 0.967 w. 128
 ARCH_NAME =  '-'.join(map(str,cfg['LAYER_DIMS']))
 trn, tst = utils.get_mnist()

@@ -10,6 +10,7 @@ For checking the correctness of codes, please do the following:
 		- pip install seaborn (also installs matplotlib), pathlib2
 		- convert all cPickle to pickle (codes are in py2, manually change this to ensure that it works in py3)
 		- convert ipynb to .py files - jupyter nbconvert --to script '<name_of_file>.ipynb'
+		- run with: python MNIST_SaveActivations 2>&1 | tee train.log && python MNIST_ComputeMI 2>&1 | tee info.log 
 		- play around with different network archs and relu/tanh
 
 - To just observe results on fashion_mnist data: 

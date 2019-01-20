@@ -3,7 +3,7 @@ For checking the correctness of codes, please do the following:
 - For running the code and to get results:
 	- Download the codes from: https://github.com/artemyk/ibsgd/tree/iclr2018
 	- Download the docker image from: https://hub.docker.com/r/ermaker/keras/tags
-	- Make the following modifications within the docker: 
+	- Make the following modifications within the docker (according to ibsgd-iclr2018/requirements.txt): 
 		(for working with IBSGD code - final output obtained with this)
 		- mount code directory with some amount of space reserved for the rawdata and logs [~1.6GB]
 		- Use docker image: ermaker/keras with tag='gpu' --> it has py3
@@ -15,7 +15,7 @@ For checking the correctness of codes, please do the following:
 
 - To just observe results on fashion_mnist data: 
 	- check out figures in ibsgd-iclr2018/plots/
-	- check out train.log and info.log - has all information on the training procedures
+	- check out ibsgd-iclr2018/train.log and ibsgd-iclr2018/info.log - has all information on the training procedures
 
 Also, check out:
 	- instructions for problem statement 

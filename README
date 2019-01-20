@@ -1,4 +1,23 @@
-To Vinay:
+For checking the correctness of codes, please do the following: 
 
-- check out figures in plots
-- check out train.log and info.log
+- For running the code and to get results:
+	- Download the codes from: https://github.com/artemyk/ibsgd/tree/iclr2018
+	- Download the docker image from: https://hub.docker.com/r/ermaker/keras/tags
+	- Make the following modifications within the docker (mount code directory with some amount of space reserved for the rawdata and logs): 
+		(for working with IBSGD code - final output obtained with this)
+		- Use docker image: ermaker/keras with tag='gpu' --> it has py3
+		- pip install seaborn (also installs matplotlib), pathlib2
+		- convert all cPickle to pickle (codes are in py2, manually change this to ensure that it works in py3 as well)
+		- convert ipynb to .py files - jupyter nbconvert --to script '<name_of_file>.ipynb'
+		- play around with different network archs and relu/tanh
+
+- To just observe results on fashion_mnist data: 
+	- check out figures in plots/
+	- check out train.log and info.log - has all information on the training procedures
+
+Also, check out:
+	- instructions for problem statement 
+	- references for links/ codes that helped me understand
+	- IDNN.pdf for the original paper proposing this idea 
+	- notes for personal use, to keep track of stuff 
+	

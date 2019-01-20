@@ -1,0 +1,14 @@
+References used to gain context/ understanding of the problem space and for codes: (ordered according to how I discovered them)
+----------------------------------------------------------------------------------
+
+[1] https://github.com/zalandoresearch/fashion-mnist -- GitHub repo for the fashion MNIST data
+[2] https://arxiv.org/abs/1703.00810 - original paper introducing what we want (figure 2)
+[3] http://mitliagkas.github.io/ift6085/student_slides/IFT6085_Presentation_IB.pdf -- very good presentation detailing the above work
+[4] https://arxiv.org/pdf/1708.07747.pdf -- paper introducing the fashion-MNIST dataset (and how it was prepared, to be in the flavor of MNIST)
+[5] https://github.com/ravidziv/IDNNs -- implementation of the IDNN paper, straight from the authors! -- seems to have a bad rap as people are not able to reproduce this effectively,
+need to check it out.
+[6] https://openreview.net/forum?id=ry_WPG-A- -- wow, more discussions on the correctness of this paper, now I am skeptical. Probably, my results might also disprove the paper? since I
+don't think this has been done with the fashion_mnist set
+[7] https://severelytheoretical.wordpress.com/2017/09/28/no-information-bottleneck-probably-doesnt-open-the-black-box-of-deep-neural-networks/ - explaining why this theory is wrong
+[8] https://planspace.org/20180213-failure_to_replicate_schwartz-ziv_and_tishby/ -- this guy had some trouble with implementation of the IB paper and has expressed his concerns,
+and has also included a version he feels is better @https://github.com/artemyk/ibsgd/tree/iclr2018

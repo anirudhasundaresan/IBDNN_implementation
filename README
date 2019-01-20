@@ -8,7 +8,7 @@ For checking the correctness of codes, please do the following:
 		- mount code directory with some amount of space reserved for the rawdata and logs [~1.6GB]
 		- Use docker image: ermaker/keras with tag='gpu' --> it has py3
 		- pip install seaborn (also installs matplotlib), pathlib2
-		- convert all cPickle to pickle (codes are in py2, manually change this to ensure that it works in py3 as well)
+		- convert all cPickle to pickle (codes are in py2, manually change this to ensure that it works in py3)
 		- convert ipynb to .py files - jupyter nbconvert --to script '<name_of_file>.ipynb'
 		- play around with different network archs and relu/tanh
 

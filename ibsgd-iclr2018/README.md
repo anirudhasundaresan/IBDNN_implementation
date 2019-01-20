@@ -1,6 +1,6 @@
-# Code for On the Information Bottleneck Theory of Deep Learning
+# Code for On the Information Bottleneck Theory of Deep Learning (using Fashion_MNIST dataset)
 
-* `MNIST_SaveActivations.ipynb` is a jupyter notebook that trains on MNIST and saves (in a data directory) activations when run on test set inputs (as well as weight norms, &c.) for each epoch.
+* `MNIST_SaveActivations.ipynb` is a jupyter notebook that trains on Fashion_MNIST and saves (in a data directory) activations when run on test set inputs (as well as weight norms, &c.) for each epoch.
 
 * `MNIST_ComputeMI.ipynb` is a jupyter notebook that loads the data files, computes MI values, and does the infoplane plots and SNR plots for data created using `MNIST_SaveActivations.ipynb`.
 

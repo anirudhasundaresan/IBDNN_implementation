@@ -43,3 +43,4 @@ the same for fashion_mnist.
 Improvements:
 - After a long effort (and experimenting this on my Mac and Ubuntu system), I discontinued using the main IDNN codes, since they were confusing and there are many changes to be made to make it work with MNIST data. (Removing the IDNN codes from this repo and bringing in code which works)
 - I started using the codes written here: https://github.com/artemyk/ibsgd/tree/iclr2018 -- gives perfect results to what is being asked.
+- If you look at plots, overfitting seems to start at ~1000 epochs (the plot is in log scale), so we should likely stop the training much earlier than 10000 epochs. 

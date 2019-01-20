@@ -1,7 +1,7 @@
 For checking the correctness of codes, please do the following: 
 
 - For running the code and to get results:
-	- Download the codes from: https://github.com/artemyk/ibsgd/tree/iclr2018
+	- Download this repo (codes are from: https://github.com/artemyk/ibsgd/tree/iclr2018) 
 	- Download the docker image from: https://hub.docker.com/r/ermaker/keras/tags
 	- Make the following modifications within the docker (according to ibsgd-iclr2018/requirements.txt): 
 		(for working with IBSGD code - final output obtained with this)
